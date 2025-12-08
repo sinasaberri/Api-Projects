@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-cloud-sun"></i>
+            <span>Beshinim?</span>
+        </div>
+        <div class="controls">
+            <button class="unit-toggle" id="unitToggle">
+                <i class="fas fa-temperature-celsius"></i>
+                <span>°C</span>
+            </button>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <div class="search-icon">
+            <i class="fas fa-search"></i>
+        </div>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search for a city...">
+        <div class="search-error" id="searchError">City not found. Please try again.</div>
+    </div>
+
+    <div class="cities-container" id="citiesContainer">
+        <!-- City cards will be dynamically inserted here -->
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+                    
