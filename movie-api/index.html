@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SADB Movies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-film"></i>
+                    SADB Movie
+                </a>
+                <div class="search-container">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search for movies...">
+                    <button class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Featured Slider -->
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <!-- Slides will be generated here -->
+            </div>
+            <button class="slider-nav prev" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-nav next" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="slider-dots" id="sliderDots">
+                <!-- Dots will be generated here -->
+            </div>
+        </div>
+
+        <!-- Random Movies Section -->
+        <h2 class="section-title">Popular Movies</h2>
+        <div class="skeleton-loader" id="loadingSkeleton">
+            <!-- Skeleton loaders will be generated here -->
+        </div>
+        <div class="random-movies" id="randomMovies" style="display: none;">
+            <!-- Random movies will be loaded here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>SADB</h3>
+                    <p style="color: var(--gray); line-height: 1.6; margin-bottom: 1rem;">
+                        Your ultimate destination for movie information, reviews, and recommendations powered by OMDb API.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Popular Movies</a></li>
+                        <li><a href="#">Top Rated</a></li>
+                        <li><a href="#">Upcoming</a></li>
+                        <li><a href="#">Genres</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Features</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Movie Details</a></li>
+                        <li><a href="#">Cast & Crew</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Trailers</a></li>
+                        <li><a href="#">Watchlist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">API Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MovieDB. This product uses the OMDb API but is not endorsed or certified by OMDb. 
+                <a href="https://www.omdbapi.com/" target="_blank">OMDb API</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Movie Modal -->
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="modal-header" id="modalContent">
+                <!-- Modal content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
