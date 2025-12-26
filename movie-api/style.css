@@ -744,6 +744,9 @@
                 width: 100%;
                 max-width: none;
             }
+            .theme-toggle {
+                display: none;
+            }
             
             .slider-container {
                 height: 400px;
