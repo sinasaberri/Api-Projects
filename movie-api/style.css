@@ -790,6 +790,13 @@
         }
 
         @media (max-width: 480px) {
+
+            .movie-genre {
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-left: 0rem;
+            }
             .slider-container {
                 height: 350px;
             }
